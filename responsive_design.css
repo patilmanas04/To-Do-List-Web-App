@@ -1,0 +1,14 @@
+@media screen and (max-width:765px){
+    .to-do-list-container .to-do-list-item{
+        flex-direction: column;
+    }
+
+    .to-do-list-container .to-do-list-item .right-part{
+        width: 157.5px;
+        align-self: flex-end;
+    }
+
+    .to-do-list-container .to-do-list-item .left-part{
+        width: 100%;
+    }
+}
