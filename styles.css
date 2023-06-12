@@ -13,13 +13,24 @@ font-family: 'Jost', sans-serif;
     --primary-700: #036B77;
     --primary-800: #004B4E;
     --primary-900: #002626;
+
+    --body-bg: #FFF2F2;
+    --text-color: #26000A;
+    --box-bg: #FEBDBD;
+    --box-border: #F98585;
+    --bubble: #CC181B;
+    --edit-button-bg: #ffffff;
+    --edit-button-border: #F98585;
+    --edit-button-text-color: #CC181B;
+    --remove-button-bg: #CC181B;
 }
 
 body{
     padding: 0;
     margin: 0;
-    /* background: linear-gradient(to bottom, var(--primary-100), var(--primary-200)); */
-    background-color: var(--primary-100);
+    /* background-color: var(--primary-100); */
+    background-color: var(--body-bg);
+    color: var(--text-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -69,13 +80,15 @@ body{
 }
 
 .container .task-input-section #input-form .task-input{
-    border: 1px solid var(--primary-400);
+    /* background-color: var(--primary-300); */
+    /* border: 1px solid var(--primary-400); */
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border);
     border-radius: 8px;
     font-size: 16px;
     outline: none;
     height: 40px;
     padding: 0 10px;
-    background-color: var(--primary-300);
     color: var(--primary-900);
     font-family: 'Jost', sans-serif;
     font-weight: 500;
@@ -83,20 +96,25 @@ body{
 }
 
 .container .task-input-section #input-form .task-input::placeholder{
-    color: var(--primary-900);
+    /* color: var(--primary-900); */
+    color: var(--text-color);
 }
 
 .container .task-input-section #input-form .task-input::-ms-input-placeholder{
-    color: var(--primary-900);
+    /* color: var(--primary-900); */
+    color: var(--text-color);
 }
 
 .container .task-input-section #input-form .submit-button{
+    /* background-color: var(--primary-300); */
+    /* border: 1px solid var(--primary-400); */
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border);
     width: 100px;
     height: 34px;
     border-radius: 8px;
-    border: 1px solid var(--primary-400);
-    background-color: var(--primary-300);
-    color: var(--primary-900);
+    /* color: var(--primary-900); */
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     align-self: flex-end;
@@ -147,7 +165,8 @@ body{
     width: 12px;
     height: 12px;
     border-radius: 999px;
-    border: 2px solid var(--primary-600);
+    /* border: 2px solid var(--primary-600); */
+    border: 2px solid var(--bubble);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -159,7 +178,8 @@ body{
 	display: block;
 	width: 0px;
 	height: 0px;
-	background-color: var(--primary-600);
+	/* background-color: var(--primary-600); */
+    background-color: var(--bubble);
 	border-radius: 999px;
 	transition: 0.1s ease-in-out;
 }
@@ -169,22 +189,26 @@ body{
 	display: block;
 	width: 8px;
 	height: 8px;
-	background-color: var(--primary-600);
+	/* background-color: var(--primary-600); */
+    background-color: var(--bubble);
 	border-radius: 999px;
 	transition: 0.2s ease-in-out;
 }
 
 .to-do-list-container .to-do-list-item .left-part .display-to-do{
+    /* background-color: var(--primary-300); */
+    /* border: 1px solid var(--primary-400); */
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border);
     font-size: 15px;
     box-sizing: border-box;
     height: 35px;
     flex-grow: 1;
-    border: 1px solid var(--primary-400);
     border-radius: 8px;
     outline: none;
     padding: 0 10px;
-    background-color: var(--primary-300);
-    color: var(--primary-900);
+    /* color: var(--primary-900); */
+    color: var(--text-color);
     font-family: 'Jost', sans-serif;
     font-weight: 500;
     cursor: initial;
@@ -194,7 +218,8 @@ body{
 
 .to-do-list-container .to-do-list-item .left-part .display-to-do.done{
     text-decoration: line-through;
-    color: var(--primary-600);
+    /* color: var(--primary-600); */
+    color: var(--text-color);
 }
 
 .to-do-list-container .to-do-list-item .right-part{
@@ -213,18 +238,21 @@ body{
 }
 
 .to-do-list-container .to-do-list-item .right-part .edit-button{
+    background: #ffffff;
+    border: 1px solid var(--edit-button-border);
+    color: var(--edit-button-text-color);
     height: 35px;
     font-size: 15px;
     border-radius: 8px;
-    background: #ffffff;
-    color: var(--primary-600);
-    border: 1px solid var(--primary-400);
+    /* color: var(--primary-600); */
+    /* border: 1px solid var(--primary-400); */
 }
 
 .to-do-list-container .to-do-list-item .right-part .remove-button{
     height: 35px;
     font-size: 15px;
-    background: var(--primary-600);
+    /* background: var(--primary-600); */
+    background: var(--remove-button-bg);
     border: none;
     border-radius: 8px;
     color: #ffffff;
