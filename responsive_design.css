@@ -1,6 +1,19 @@
 @media screen and (max-width:765px){
+    .container #page-title{
+        font-size: 35px;
+    }
+
+    .container .task-input-section #input-form{
+        transform: scale(0.95);
+    }
+
     .to-do-list-container .to-do-list-item{
         flex-direction: column;
+        transform: scale(0.95);
+    }
+
+    .to-do-list-container .to-do-list-item-container{
+        gap: 30px;
     }
 
     .to-do-list-container .to-do-list-item .right-part{
